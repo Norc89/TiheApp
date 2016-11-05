@@ -28,6 +28,9 @@
         <activity android:name=".activity.SimpleActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
 
+        <activity android:name=".activity.TranslucentStatusBarActivity"
+            android:theme="@style/TranslucentStatusBarTheme"/>
+
     </application>
 
 </manifest>

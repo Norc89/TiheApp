@@ -26,17 +26,10 @@ public class NavigationActivity extends ToolbarActivity implements NavigationIte
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
 
         setTitle(getString(R.string.activity_navigation_title));
-        addNavigationItem(NavigationActivity.class, "TranslucentStatusBar", "On this screen is TranslucentStatusBar status bar", R.drawable.ic_home);
-        /*addNavigationItem(CustomViewActivity.class, "Custom view 2", "This is a demo how to use custom view", R.drawable.head);
-        addNavigationItem(FragmentActivity.class, "Activity -> fragment", "This is demo how to use fragment on activity", R.drawable.fire);
-        addNavigationItem(TabActivity.class, "*Tabs", "This is description of navigation 2, This is description of navigation 2, This is description of navigation 2", R.drawable.home);
-        addNavigationItem(DemoActivity.class, "*View pager", "This is description of navigation 2, This is description of navigation 2, This is description of navigation 2", R.drawable.head);
-        addNavigationItem(DemoActivity.class, "*Drawer with fragments", "This is description of navigation 2, This is description of navigation 2, This is description of navigation 2", R.drawable.fire);
-        addNavigationItem(DemoActivity.class, "Navigation 4", "This is description of navigation 2, This is description of navigation 2, This is description of navigation 2", R.drawable.home);
-        addNavigationItem(DemoActivity.class, "Navigation 2", "This is description of navigation 2, This is description of navigation 2, This is description of navigation 2", R.drawable.head);
-        addNavigationItem(DemoActivity.class, "Navigation 3", "This is description of navigation 2, This is description of navigation 2, This is description of navigation 2", R.drawable.fire);
-        addNavigationItem(StatsViewActivity.class, "StatsView", "This is description of navigation 2, This is description of navigation 2, This is description of navigation 2", R.drawable.home);
-    */
+        addNavigationItem(TranslucentStatusBarActivity.class, "TranslucentStatusBar", "On this screen is TranslucentStatusBar status bar", R.drawable.ic_home);
+        addNavigationItem(SimpleActivity.class, "*Simple fragment", "This is demo how to create simple fragment", R.drawable.ic_fire);
+        addNavigationItem(TabActivity.class, "*Tabs", "This screen shows how to use tabs", R.drawable.ic_head);
+
     }
 
     private void initView() {
