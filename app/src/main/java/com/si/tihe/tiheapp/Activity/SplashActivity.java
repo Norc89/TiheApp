@@ -1,5 +1,6 @@
-package com.si.tihe.tiheapp.Activity;
+package com.si.tihe.tiheapp.activity;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -15,7 +16,7 @@ import roboguice.inject.RoboInjector;
 import roboguice.util.RoboContext;
 
 /**
- * Created on 11.5.2016.
+ * Created on 5.11.2016.
  *
  * Splash activity
  *
@@ -76,7 +77,7 @@ public class SplashActivity extends AppCompatActivity implements RoboContext {
 
         @Override
         protected void onPostExecute(Void param) {
-            //startActivity(new Intent(SplashActivity.this, NavigationActivity.class));
+            startActivity(new Intent(SplashActivity.this, NavigationActivity.class));
             finish();
         }
     }
