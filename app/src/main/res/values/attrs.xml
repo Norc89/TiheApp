@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="pressEffectBackground" format="reference" />
+    <attr name="pressEffectForeground" format="reference" />
+
+    <declare-styleable name="CustomView">
+        <attr name="descriptionText" format="string" />
+        <attr name="editTextHint" format="string" />
+        <attr name="switchEnabled" format="boolean" />
+    </declare-styleable>
+
+</resources>

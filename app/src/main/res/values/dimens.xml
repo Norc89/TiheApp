@@ -3,4 +3,25 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="material_tiny_margin">4dp</dimen>
+    <dimen name="material_small_margin">8dp</dimen>
+    <dimen name="material_normal_margin">16dp</dimen>
+    <dimen name="material_medium_margin">24dp</dimen>
+    <dimen name="material_large_margin">32dp</dimen>
+    <dimen name="material_huge_margin">40dp</dimen>
+    <dimen name="material_above_huge_margin">48dp</dimen>
+
+    <dimen name="text_size_tiny">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_above_normal">20sp</dimen>
+    <dimen name="text_size_big">33sp</dimen>
+    <dimen name="text_size_large">38sp</dimen>
+    <dimen name="text_size_huge">60sp</dimen>
+    <dimen name="text_size_above_huge">69sp</dimen>
+
+    <dimen name="activity_splash_progress_width">250dp</dimen>
+    <dimen name="activity_splash_progress_height">25dp</dimen>
+
 </resources>
