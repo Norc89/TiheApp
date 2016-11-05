@@ -1,14 +1,29 @@
 apply plugin: 'com.android.application'
 
+ext {
+    versions = [
+            minSdkVersion    : 18,
+            targetSdkVersion : 24,
+            compileSdkVersion: 24,
+            buildToolsVersion: '23.0.3',
+            versionCode      : 1,
+            versionName      : '1.1',
+            appCompatVersion : '23.1.1',
+            roboGuiceVersion : '3.0.1',
+            ormLiteCore : '4.48',
+            ormLiteAndroid : '4.48',
+    ]
+}
+
 android {
-    compileSdkVersion 24
-    buildToolsVersion "23.0.3"
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
     defaultConfig {
         applicationId "com.si.tihe.tiheapp"
-        minSdkVersion 18
-        targetSdkVersion 24
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode versions.versionCode
+        versionName versions.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -19,11 +34,21 @@ android {
     }
 }
 
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    compile(group: 'org.roboguice', name: 'roboguice', version: versions.roboGuiceVersion)
+    compile(group: 'com.j256.ormlite', name: 'ormlite-core', version: versions.ormLiteCore)
+    compile(group: 'com.j256.ormlite', name: 'ormlite-android', version: versions.ormLiteAndroid)
+    compile 'com.github.peoplesbeer:kitt-progressbar-android:v0.0.1'
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'
     testCompile 'junit:junit:4.12'
