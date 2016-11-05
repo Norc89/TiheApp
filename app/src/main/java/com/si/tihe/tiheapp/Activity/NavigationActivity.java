@@ -29,6 +29,7 @@ public class NavigationActivity extends ToolbarActivity implements NavigationIte
         addNavigationItem(TranslucentStatusBarActivity.class, "TranslucentStatusBar", "On this screen is TranslucentStatusBar status bar", R.drawable.ic_home);
         addNavigationItem(SimpleActivity.class, "*Simple fragment", "This is demo how to create simple fragment", R.drawable.ic_fire);
         addNavigationItem(TabActivity.class, "*Tabs", "This screen shows how to use tabs", R.drawable.ic_head);
+        addNavigationItem(CustomViewActivity.class, "Custom view +db", "This is simple demo of custom view and db use", R.drawable.ic_head);
 
     }
 

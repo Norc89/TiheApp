@@ -13,6 +13,7 @@
     <color name="theme_inactive_color">#ff787878</color>
 
     <color name="navigation_item_bg">#99000000</color>
+    <color name="custom_view_bg_color">#66666666</color>
 
 
 

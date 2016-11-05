@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_view_bg_color"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/material_small_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/material_small_margin" >
+
+        <TextView
+            android:id="@+id/custom_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Insert your name:"
+            android:gravity="left"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/custom_switch_custom"
+            android:layout_centerVertical="true"/>
+
+        <Switch
+            android:id="@+id/custom_switch_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/custom_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginLeft="@dimen/material_small_margin"
+        android:layout_marginRight="@dimen/material_small_margin"/>
+
+</LinearLayout>

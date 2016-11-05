@@ -31,6 +31,9 @@
         <activity android:name=".activity.TranslucentStatusBarActivity"
             android:theme="@style/TranslucentStatusBarTheme"/>
 
+        <activity android:name=".activity.CustomViewActivity"
+            android:theme="@style/TranslucentStatusBarTheme"/>
+
     </application>
 
 </manifest>
